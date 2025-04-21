@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo1.png';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaUser } from 'react-icons/fa';
+
 const Navbar = () => {
+  const[menu, setMenu] = useState("Home");
   return (
     <div className="navbar-wrapper">
      
@@ -28,11 +30,11 @@ const Navbar = () => {
 
       <div className="nav-menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
+          <li onClick={()=>setMenu("Home")} className={menu==="Home"?"active":""}><a href="#">Home</a></li>
+          <li onClick={()=>setMenu("About")} className={menu==="About"?"active":""}><a href="#">About</a></li>
+          <li onClick={()=>setMenu("Services")} className={menu==="Services"?"active":""}><a href="#">Services</a></li>
+          <li onClick={()=>setMenu("Contact")} className={menu==="Contact"?"active":""}><a href="#">Contact</a></li>
+          <li onClick={()=>setMenu("Blog")} className={menu==="Blog"?"active":""}><a href="#">Blog</a></li>
         </ul>
         <div className="login-register">
           <FaUser /> <a href="#">Login/Register</a>
