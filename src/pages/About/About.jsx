@@ -11,7 +11,7 @@ const About = () => {
       </section>
 
       {/* Who We Are Section */}
-      <section className="about-main">
+      <section className="about-main two-column">
         <div className="about-image">
           <img src="/images/about-team.jpg" alt="Our Team" />
         </div>
