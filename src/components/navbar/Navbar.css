@@ -1,76 +1,98 @@
+/* Wrapper and font */
 .navbar-wrapper {
-    font-family: Arial, sans-serif;
-  }
-  
-  .scrolling-text {
-    background-color: #673ee5;
-    color: #ffffff;
-    padding: 5px 0;
-    font-weight: bold;
-  }
-  
-  .logo-social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 70px;
-    background-color: #fff;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .social-icons a {
-    margin-left: 10px;
-    color: #673ee5;
-    font-size: 18px;
-  }
-  
-  .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
-    padding: 20px 80px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-menu ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-menu ul li {
-    margin-right: 20px;
-    color: #ffffff;
-  }
-  
-  .nav-menu ul li a {
-    /* color: #fff; */
-    text-decoration: none;
-  }
-  
-  .login-register {
-    color: #fff;
-    display: flex;
-    align-items: center;
-  }
-  
-  .login-register a {
-    color: #fff;
-    margin-left: 5px;
-    text-decoration: none;
-  }
-  .logo img {
-    height: 60px;        /* adjust as needed */
-    width: auto;         /* maintains aspect ratio */
-    object-fit: contain;
-  }  
-  .nav-menu ul li.active{
-    color: #673ee5;
-  }
- 
+  font-family: Arial, sans-serif;
+}
+
+/* Scrolling marquee banner */
+.scrolling-text {
+  background-color: #673ee5;
+  color: #ffffff;
+  padding: 5px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Logo and social links area */
+.logo-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  color: #673ee5;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #401ba6;
+}
+
+/* Navigation menu */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 20px 80px;
+  transition: background-color 0.3s ease;
+}
+
+/* Menu list */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu items */
+.nav-menu ul li {
+  margin-right: 20px;
+}
+
+/* Menu links */
+.nav-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-menu ul li a:hover {
+  color: #673ee5;
+}
+
+/* Active link */
+.nav-menu ul li.active a {
+  color: #673ee5;
+}
+
+/* Login/Register */
+.login-register {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.login-register a {
+  color: #ffffff;
+  margin-left: 5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-register a:hover {
+  color: #673ee5;
+}
