@@ -1,9 +1,9 @@
-/* Wrapper and font */
+/* ====== Wrapper and Font ====== */
 .navbar-wrapper {
   font-family: Arial, sans-serif;
 }
 
-/* Scrolling marquee banner */
+/* ====== Scrolling Marquee ====== */
 .scrolling-text {
   background-color: #673ee5;
   color: #ffffff;
@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-/* Logo and social links area */
+/* ====== Logo and Social Area ====== */
 .logo-social {
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@
   color: #401ba6;
 }
 
-/* Navigation menu */
+/* ====== Navigation Menu Bar ====== */
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -48,38 +48,92 @@
   transition: background-color 0.3s ease;
 }
 
-/* Menu list */
+/* ====== Menu List ====== */
 .nav-menu ul {
   list-style: none;
   display: flex;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
 
-/* Menu items */
+/* ====== Each Menu Item ====== */
 .nav-menu ul li {
-  margin-right: 20px;
+  position: relative;
 }
 
-/* Menu links */
-.nav-menu ul li a {
+/* ====== Menu Links ====== */
+.nav-menu ul li a,
+.nav-menu ul li span {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
+  cursor: pointer;
   transition: color 0.3s ease;
 }
 
-/* Hover effect */
-.nav-menu ul li a:hover {
+/* ====== Hover Effect ====== */
+.nav-menu ul li a:hover,
+.nav-menu ul li span:hover {
   color: #673ee5;
 }
 
-/* Active link */
-.nav-menu ul li.active a {
+/* ====== Active Menu ====== */
+.nav-menu ul li.active a,
+.nav-menu ul li.active span {
   color: #673ee5;
 }
 
-/* Login/Register */
+/* ====== Services Link Wrapper ====== */
+.services-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ====== Dropdown Arrow ====== */
+.dropdown-arrow {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ====== Dropdown Menu under Services ====== */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+/* ✅ FONT COLOR BLACK for dropdown links */
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #000000; /* black text */
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+/* ✅ On hover: purple bg with white text */
+.dropdown-menu li a:hover,
+.dropdown-menu li a.active {
+  background-color: #673ee5;
+  color: #ffffff !important;
+}
+
+/* ====== FreeConsultant Section ====== */
 .login-register {
   color: #fff;
   display: flex;

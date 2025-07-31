@@ -1,0 +1,108 @@
+.qs-footer {
+  background: linear-gradient(to right, #000000, #0f0f0f);
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left; /* Ensure footer content is left aligned globally */
+}
+
+.qs-footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  text-align: left; /* Align text in the container */
+}
+
+.qs-footer-col {
+  flex: 1 1 220px;
+  text-align: left; /* Ensure column content aligns left */
+}
+
+.qs-footer-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7b2ff7;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.qs-footer-col h4 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7b2ff7;
+  text-align: left;
+}
+
+.qs-footer-col p {
+  font-size: 14px;
+  color: #d1d5db;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.qs-footer-col ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #d1d5db;
+  text-align: left;
+}
+
+.qs-footer-col ul li {
+  margin: 6px 0;
+}
+
+.qs-footer-col ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.qs-footer-col ul li a:hover {
+  color: white;
+}
+
+.qs-footer-social-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  text-align: left;
+}
+
+.qs-footer-social-buttons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  width: fit-content;
+  transition: background 0.3s, transform 0.2s;
+  text-align: left;
+}
+
+.qs-footer-social-buttons a:hover {
+  background-color: #7b2ff7;
+  transform: translateY(-2px);
+}
+
+.qs-footer-bottom {
+  background-color: #ffffff;      /* White background */
+  color: #7b2ff7;                 /* Purple text */
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  border-top: 1px solid #e5e7eb;
+  padding: 15px 10px;
+}
+

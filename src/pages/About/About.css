@@ -1,38 +1,278 @@
-.about-main.two-column {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem 0;
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(135deg, #7b2ff7);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.banner h1 span {
+  color: #ffdd57;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-image-column {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.about-image-column img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.about-content-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-content-column h2 {
+  font-size: 2rem;
+  color: #7b2ff7;
+  margin-bottom: 1rem;
+}
+
+.about-content-column p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Vision & Mission */
+.vision-mission {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.vision-box, .mission-box {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.vision-box h3, .mission-box h3 {
+  font-size: 1.5rem;
+  color: #7b2ff7;
+  margin-bottom: 1rem;
+}
+
+/* Core Values */
+.core-values {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.core-values h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #7b2ff7;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.value-box {
+  background: #f1f7ff;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 87, 255, 0.1);
+}
+
+.value-box:hover {
+  transform: translateY(-5px);
+}
+
+.value-box .icon {
+  font-size: 2.5rem;
+  color: #7b2ff7;
+  margin-bottom: 1rem;
+}
+
+.value-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.value-box p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Call to Action (CTA) */
+.cta-section {
+  background: linear-gradient(135deg, #7b2ff7);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-box p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ffdd57;
+  color: #333;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  background-color: #ffc107;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .about-section,
+  .vision-mission {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .about-image {
-    flex: 1 1 50%;
-    max-width: 50%;
+
+  .about-image-column img {
+    max-width: 90%;
   }
-  
-  .about-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
+
+  .cta-box h2 {
+    font-size: 1.8rem;
   }
-  
-  .about-content {
-    flex: 1 1 50%;
-    max-width: 50%;
+
+  .cta-box p {a.about-section {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #f0f4ff, #ffffff);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.vision-mission {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card h3 {
+  color: #6c2bd9;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: #444;
+  font-size: 1rem;
+}
+
+.belief-title {
+  font-size: 2rem;
+  color: #6c2bd9;
+  margin-bottom: 30px;
+}
+
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.value-card {
+  background: #f4f6ff;
+  border-radius: 20px;
+  padding: 25px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.value-card:hover {
+  background: #ecebff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #6c2bd9;
+  margin-bottom: 10px;
+}
+
+.value-card h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+    font-size: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .about-main.two-column {
-      flex-direction: column;
-    }
-  
-    .about-image,
-    .about-content {
-      max-width: 100%;
-      flex: 1 1 100%;
-    }
-  }
-  
+}
